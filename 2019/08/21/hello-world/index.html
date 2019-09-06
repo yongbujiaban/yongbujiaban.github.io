@@ -627,10 +627,11 @@
     let gitalk = new Gitalk({
         clientID: 'd86b264a5d09f9305072',
         clientSecret: '3e75275381Def59e06c3509021fa8a9fe30a67d1',
-        repo: 'yongbujiaban.github.io',
+        repo: 'https://yongbujiaban.github.io/',
         owner: 'yongbujiaban',
         admin: "yongbujiaban",
-        id: '2019-08-21T14-08-47',
+        id: location.pathname,
+        id: md5(location.pathname),
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
